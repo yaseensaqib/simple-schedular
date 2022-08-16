@@ -1,38 +1,266 @@
-.App {
+@import '~antd/dist/antd.css';
+
+/* Common css classes */
+.btn-info{
+  height: 42px;
+  background: linear-gradient(97.75deg, #00B9F1 -11.55%, #034EA2 111.02%);
+  border-radius: 10px;
+  border: 0px;
+  min-width: 100px;
+}
+
+.btn-success{
+  height: 42px;
+  background: linear-gradient(155.56deg, #E6DE18 -55%, #438B44 127.5%), linear-gradient(0deg, #4A8E44, #4A8E44), #DFDFDF;
+  border-radius: 10px;
+  border: 0px;
+  min-width: 100px;
+}
+
+/* antd layout css classes */
+.site-layout-background{
+  padding: 0px;
+  background: #FFF;
+  height: 110px;
+}
+
+.site-layout-background h2{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 15px;
+  color: #000000;
+}
+
+/* antd modal css classes */
+.ant-modal{
+  height: 85vh;
+}
+.ant-modal-body {
+  height: calc(85vh - 140px);
+ }
+.ant-modal .ant-modal-content {
+  border-radius: 15px;
+}
+
+.ant-modal .ant-modal-header{
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  border-bottom: 0px;
+}
+
+.ant-modal .ant-modal-close .ant-modal-close-x .ant-modal-close-icon svg{
+  display: none;
+}
+.ant-modal .ant-modal-close .ant-modal-close-x .ant-modal-close-icon{
+  background:url('assets/images/cross.svg');
+  width: 22px;
+  height: 22px;
+}
+
+.ant-modal .ant-modal-content Form label{
+  height: 17px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #000000;
+  opacity: 0.5;
+}
+
+.ant-modal .ant-modal-content Form input{
+  border: 0px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.ant-modal-footer{
+  border-top: 0px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-modal-footer button{
+  width: 207px;
+  height: 52px;
+  background: linear-gradient(155.56deg, #E6DE18 -55%, #438B44 127.5%), linear-gradient(0deg, #4A8E44, #4A8E44), #DFDFDF;
+  border-radius: 15px;
+  border: 0px;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-modal-footer button span{
+  width: 92px;
+  height: 17px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-bg{
+  background:url('assets/images/login-bg.png');
+  height: 100vh;
+  overflow: auto;
+  background-size: 100% 100%;
+}
+
+.site-layout{
+  padding-left: 80px;
+}
+
+.ant-layout-sider{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    height: 100%;
+}
+
+.logo{
+  height: 46px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo span{
+  line-height: 46px;
+  padding-left: 10px;
+  white-space: nowrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo img{
+  height: 46px;
+  width: 46px;
+}
+
+.ant-layout-sider-collapsed .logo span{
+  display: none;
+}
+
+.collapsable{
+  margin-top: 50px;
+}
+
+.collapsable .anticon-menu-fold{
+  margin-left: 25px;
+}
+
+.collapsable .anticon-menu-unfold{
+  margin-left: 34px;
+}
+
+.collapsable span{
+  width: 14px;
+  height: 14px;
+  margin: 20px auto;
+  display: block;
+}
+
+.login-frame{
+    position: relative;
+    width: 410px;
+    height: 651px;
+    margin: 0px auto;
+    margin-top: 99px;
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+.login-frame .logo{
+    width: 321px;
+    height: 118px;
+    background: url('assets/images/logo.png') center;
+    margin: 0px auto;
+}
+
+.login-frame h1{
+    height: 41px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #0C4DA2;
+}
+
+.login-frame a{
+    width: 262px;
+    height: 42px;
+    background: linear-gradient(258.61deg, #E6DE18 -13.41%, #438B44 82.44%);
+    border-radius: 10px;
+    display: block;
+    margin:10px auto;
+}
+
+.login-frame a span{
+    width: 192px;
+    height: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin: 0px auto;
+    display: block;
+    padding: 10px;
+}
+
+.login-frame small{
+    width: 140px;
+    height: 15px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+    text-decoration-line: underline;
+
+    color: #0C4DA2;
+    display: block;
+    margin: 30px auto;
+}
+
+.login-frame form label{
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+    font-variant: small-caps;
+    color: #000000;
+    text-align: left;
+    display: block;
+}
+
+.login-frame form input{
+    width: 410px;
+    height: 42px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.login-frame form button{
+
+    width: 262px;
+    height: 42px;
+    background: linear-gradient(97.75deg, #00B9F1 -11.55%, #034EA2 111.02%);
+    border-radius: 10px;
+    margin: 30px auto;
 }
